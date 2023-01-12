@@ -60,13 +60,17 @@
     <img src="./images/myprofile.png" alt="Libertus Sabebeget" width="150" class="rounded-circle img-thumbnail">
     <h1 class="display-4 fs-1 fw-bold">Libertus Devlin</h1>
     <p class="lead fs-5"></p>
-    <img src="images/wave.svg">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffffff" fill-opacity="1"
+        d="M0,192L48,197.3C96,203,192,213,288,186.7C384,160,480,96,576,112C672,128,768,224,864,229.3C960,235,1056,149,1152,117.3C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
   </section>
   <!-- End Jumbotron -->
 
   <!-- Start About -->
   <section id="about">
-    <div class="container" data-aos="fade-down">
+    <div class="container" data-aos="fade-down" data-aos-duration="1000">
       <div class="row text-center mb-3">
         <div class="col">
           <h2>About Me</h2>
@@ -85,7 +89,11 @@
       </div>
     </div>
 
-    <img src="images/wave (1).svg">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#e2edff" fill-opacity="1"
+        d="M0,192L48,197.3C96,203,192,213,288,186.7C384,160,480,96,576,112C672,128,768,224,864,229.3C960,235,1056,149,1152,117.3C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
   </section>
   <!-- End About -->
 
@@ -152,7 +160,45 @@
         </div>
       </div>
     </div>
-    <img src="images/wave.svg">
+
+    <section id="my-keyboards">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>My Keyboards</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="keyboard-box">
+              <h4 class="keyboard-name">Keychron K2</h4>
+              <img src="images/myanimte/keyboard1.png" alt="Keychron K3" class="keyboard-img">
+              <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="keyboard-box">
+              <h4 class="keyboard-name">Womier RGB</h4>
+              <img src="images/myanimte/keyboard2.png" alt="Womier RGB" class="keyboard-img">
+              <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="keyboard-box">
+              <h4 class="keyboard-name">Red Dragon</h4>
+              <img src="images/myanimte/keyboard4.png" alt="Red Dragon" class="keyboard-img">
+              <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,192L48,197.3C96,203,192,213,288,186.7C384,160,480,96,576,112C672,128,768,224,864,229.3C960,235,1056,149,1152,117.3C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
   </section>
   <!-- End Projects -->
 
@@ -233,7 +279,7 @@
 
   <!-- Start Contact -->
   <section id="contact">
-    <div class="container mt-5">
+    <div class="container mt-5" data-aos="fade-down" data-aos-duration="1000">
       <div class="row text-center mb-3">
         <div class="col">
           <h2>Contact Me</h2>
@@ -352,6 +398,16 @@
     })
   </script>
   <!-- End Script Contact Form -->
+
+  <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+      max: 25,
+      speed: 1000,
+      glare: true,
+    });
+    // VanillaTilt.init(document.querySelectorAll(".your-element"));
+  </script>
 
 </body>
 
